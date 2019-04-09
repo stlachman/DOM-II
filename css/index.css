@@ -356,6 +356,7 @@ img {
   border: 1px solid #C0C0C0;
   cursor: pointer;
   font-size: 1.8rem;
+  transition: 0.24s all ease-in-out;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -365,4 +366,7 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .content-pick .destination .btn.nudge {
+  transform: scale(1.2);
 }

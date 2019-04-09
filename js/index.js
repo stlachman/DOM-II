@@ -57,4 +57,21 @@ nav.addEventListener('focus', (event) => {
 }, true); 
 
 
+// Load 7/10
 
+window.addEventListener('load', (event) => {
+  document.querySelector('body').classList.add('loaded');
+});
+
+
+// Click 8/10
+const contentBtns = document.querySelector('.content-pick');
+
+contentBtns.addEventListener('click', nudge);
+
+function nudge(event) {
+  if (Array.from(event.target.classList).includes("btn")) {
+    event.target.classList.toggle("nudge");
+  }
+  
+}
