@@ -73,5 +73,17 @@ function nudge(event) {
   if (Array.from(event.target.classList).includes("btn")) {
     event.target.classList.toggle("nudge");
   }
-  
+}
+
+// keydown 9/10
+let egg = "";
+
+window.addEventListener('keydown', easterEgg);
+
+function easterEgg(event) {
+  egg = egg + event.key;
+  if (egg === "funbus") {
+    alert("Fun BUS FTW!")
+    window.removeEventListener("keydown", easterEgg);
+  }
 }
