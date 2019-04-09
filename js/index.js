@@ -104,6 +104,28 @@ funBusImg.addEventListener('dragstart', (event) => {
 });
 
 funBusImg.addEventListener('dragend', (event) => {
-	// reset the transparency
 	event.target.style.border = '';
 });
+
+nav.addEventListener('click', (event) => {
+	if (event.target.className === 'nav-link') {
+		event.preventDefault();
+	}
+});
+
+const contentSection = document.querySelector('.content-pick');
+
+contentSection.addEventListener('click', colorUpdate);
+
+function colorUpdate(event) {
+	event.target.style.background = 'purple';
+}
+
+const contentP = document.querySelector('.content-pick p');
+
+contentP.addEventListener('click', colorBorder);
+
+function colorBorder(event) {
+	event.target.style.border = '2px solid red';
+	event.stopPropagation();
+}
