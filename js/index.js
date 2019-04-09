@@ -108,12 +108,16 @@ funBusImg.addEventListener('dragend', (event) => {
 	event.target.style.border = '';
 });
 
+// Example illustrating how to prevent the default action of an a tag on click
+
 nav.addEventListener('click', (event) => {
 	if (event.target.className === 'nav-link') {
 		event.preventDefault();
 	}
 });
 
+
+// Example illustrating how to stop event propagation
 const contentSection = document.querySelector('.content-pick');
 
 contentSection.addEventListener('click', colorUpdate);
@@ -130,3 +134,8 @@ function colorBorder(event) {
 	event.target.style.border = '2px solid red';
 	event.stopPropagation();
 }
+
+// Green Sock Animation
+window.addEventListener('load', (event) => {
+  TweenMax.from(".logo-heading", 1, {x:-150, y: -100, opacity:0, scale:0.25});
+});
