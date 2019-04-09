@@ -60,7 +60,8 @@ nav.addEventListener(
 // Load 7/10
 
 window.addEventListener('load', (event) => {
-	document.querySelector('body').classList.add('loaded');
+	const footerContent = document.querySelector('.footer p');
+  footerContent.textContent = `Copyright Fun Bus ${new Date().getFullYear()}`
 });
 
 // Click 8/10
