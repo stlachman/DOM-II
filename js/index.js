@@ -47,5 +47,14 @@ window.addEventListener('resize', function(event) {
   }
 });
 
+// Focus 6/10
+
+const nav = document.querySelector('.nav');
+
+nav.addEventListener('focus', (event) => {
+  event.target.style.background = '#bada55';
+  event.target.style.padding = '10px'
+}, true); 
+
 
 
