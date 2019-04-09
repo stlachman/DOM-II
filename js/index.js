@@ -38,5 +38,14 @@ window.addEventListener('scroll', function() {
 });
 
 
+// Resize 5/10
+window.addEventListener('resize', function(event) {
+  if (event.target.outerWidth < 1000) {
+    mainNavigation.style.padding = "0 20px";
+  } else {
+    mainNavigation.style.padding = "0";
+  }
+});
+
 
 
