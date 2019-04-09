@@ -215,6 +215,13 @@ img {
   color: #212529;
   text-decoration: none;
 }
+.main-navigation .logo-heading {
+  transition: 0.3s all ease-in-out;
+}
+.main-navigation .logo-heading.hover {
+  font-size: 5rem;
+  cursor: pointer;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
